@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0px;
+  font-family: "Archivo", sans-serif;
+}
+
+h1 {
+  line-height: 120%;
+}
+
+@media screen and (min-width: 1024px) {
+  section {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  section {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .container {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  section {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
