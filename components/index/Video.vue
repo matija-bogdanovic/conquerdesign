@@ -19,7 +19,7 @@ export default {
   name: "VideoComponent",
   data() {
     return {
-      scrollFactor: 5, // Adjust this value for faster growth (higher values mean quicker growth)
+      scrollFactor: 1.5, // Adjust this value for faster growth (higher values mean quicker growth)
     };
   },
   methods: {
@@ -65,7 +65,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: start;
-  height: 100vh; /* Increase the height for scrolling */
   overflow: hidden;
 }
 
