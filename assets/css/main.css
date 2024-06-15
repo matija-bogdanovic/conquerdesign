@@ -2,15 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0px;
+  line-height: 140%;
   font-family: "Archivo", sans-serif;
+  box-sizing: border-box;
 }
-
+body {
+  background-color: #FAF8FF;
+}
 h1 {
   line-height: 120%;
 }
-
+section {
+  background-color: #FAF8FF;
+}
 @media screen and (min-width: 1024px) {
   section {
     padding-left: 80px;

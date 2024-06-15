@@ -1,11 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  plugins: [
-    "~/plugins/vueuse-motion.js", 
-    "~/plugins/three.js"
-  ],
+
+  plugins: ["~/plugins/three.js"],
+
   css: ["~/assets/css/main.css"],
+
   app: {
     head: {
       link: [
@@ -16,12 +16,16 @@ export default defineNuxtConfig({
           href: "https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap",
         },
       ],
+      title: "Conquer Design",
     },
   },
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
+  modules: ["@nuxt/image"],
 });
