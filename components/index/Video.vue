@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <video
-    class="z-[10]"
+      class="z-[10]"
       ref="videoPlayer"
       autoplay
       muted

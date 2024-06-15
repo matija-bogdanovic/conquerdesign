@@ -1,5 +1,5 @@
 <template>
-  <div class="container sticky top-0 z-0">
+  <div class="container sticky top-0">
     <div class="py-[150px] flex flex-col gap-40">
       <div class="flex flex-row items-end">
         <h1

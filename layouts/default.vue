@@ -1,5 +1,5 @@
 <template>
-  <AppHeader class="z-[100000] w-full" />
+  <AppHeader class="z-[1000] w-full" />
   <slot />
   <section>
     <AppFooter />

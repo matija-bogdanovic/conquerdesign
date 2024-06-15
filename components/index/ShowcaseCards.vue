@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-white-primary xsm:flex-col flex lg:flex-row gap-20 container xsm:py-[40px] md:py-[80px] lg:py-[160px] relative overflow-visible z-[1000]"
+    class="bg-white-primary xsm:flex-col flex lg:flex-row gap-20 container xsm:py-[40px] md:py-[80px] lg:py-[160px] relative overflow-visible z-[10]"
   >
     <div class="relative">
       <div class="sticky top-0 flex flex-col pt-[80px] items-start gap-[48px]">

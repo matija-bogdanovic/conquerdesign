@@ -1,5 +1,5 @@
 <template>
-  <div class="container bg-white-primary relative">
+  <div class="z-[10] container bg-white-primary relative">
     <div class="py-[200px] sticky top-0">
       <center>
         <img src="~/assets/img/work.png" alt="Work" />

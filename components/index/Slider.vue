@@ -2,7 +2,6 @@
   <div class="flex gap-[81px] relative overflow-hidden">
    <div class="bg-gradient-to-white absolute h-[50px] left-0 bottom-0"></div>
     <div class="items-center justify-center flex animate-loop-scroll gap-[81px]">
-      
       <img
         src="~/assets/img/arisehealth.png"
         alt="Image 1"
