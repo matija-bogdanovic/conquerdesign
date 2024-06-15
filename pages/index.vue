@@ -3,8 +3,8 @@
     <Hero />
     <Video />
     <ShowcaseCards />
-    <Work class="z-[10000] relative"/>
-    <WorkEmbodyment />
+    <Work class="z-[10000] relative" />
+    <WorkEmbodyment class="z-[10000] relative" />
   </section>
   <Quote />
   <section>
