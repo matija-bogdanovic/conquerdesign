@@ -1,9 +1,9 @@
 <template>
   <div class="container sticky top-0">
-    <div class="py-[150px] flex flex-col gap-40">
+    <div class="py-[170px] flex flex-col gap-40">
       <div class="flex flex-row items-end">
         <h1
-          class="w-full font-light uppercase lg:text-[112px] testanimation md:text-[80px] xsm:text-[50px]"
+          class="font-light uppercase lg:text-[112px] testanimation md:text-[80px] xsm:text-[50px]"
         >
           we <strong class="font-bold">design</strong><br />
           tomorrow
