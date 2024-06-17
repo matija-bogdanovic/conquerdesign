@@ -5,10 +5,10 @@
     <div class="relative">
       <div class="sticky top-0 flex flex-col pt-[80px] items-start gap-[48px]">
         <div class="flex flex-col gap-[16px]">
-          <CardText
+          <IndexCardsCardText
             text="Conquer Design transforms your vision into intuitive, scalable, and strategic digital experiences. We prioritize usability, consistency, and innovation to elevate your brand. Our partner are there to create impactful designs that resonate and engage."
           />
-          <CardHeader
+          <IndexCardsCardHeader
             class="xsm:text-[26px] md:text-[36px] lg:text-[56px]"
             header="Your Partner in Design Innovation"
           />
@@ -24,8 +24,8 @@
           <img src="~/assets/img/gem.svg" alt="Gem" />
         </div>
         <div class="flex flex-col gap-[12px]">
-          <CardHeader header="Driven by Purpose" />
-          <CardText
+          <IndexCardsCardHeader header="Driven by Purpose" />
+          <IndexCardsCardText
             text="Conquer Design transforms your vision into intuitive, scalable, and strategic digital experiences. We prioritize usability, consistency, and innovation to elevate your brand. Our partner are there to create impactful designs"
           />
         </div>
@@ -37,8 +37,8 @@
           <img src="~/assets/img/partnerships.svg" alt="Partnerships" />
         </div>
         <div class="flex flex-col gap-[12px]">
-          <CardHeader header="Partnerships" />
-          <CardText
+          <IndexCardsCardHeader header="Partnerships" />
+          <IndexCardsCardText
             text="Conquer Design transforms your vision into intuitive, scalable, and strategic digital experiences. We prioritize usability, consistency, and innovation to elevate your brand. Our partner are there to create impactful designs "
           />
         </div>
@@ -50,8 +50,8 @@
           <img src="~/assets/img/security.svg" alt="Security" />
         </div>
         <div class="flex flex-col gap-[12px]">
-          <CardHeader header="Security &#38; Compliance" />
-          <CardText
+          <IndexCardsCardHeader header="Security &#38; Compliance" />
+          <IndexCardsCardText
             text="Conquer Design transforms your vision into intuitive, scalable, and strategic digital experiences. We prioritize usability, consistency, and innovation to elevate your brand. Our partner are there to create impactful designs"
           />
         </div>
@@ -63,8 +63,8 @@
           <img src="~/assets/img/customsolutions.svg" alt="Custom Solutions" />
         </div>
         <div class="flex flex-col gap-[12px]">
-          <CardHeader header="Custom Solutions" />
-          <CardText
+          <IndexCardsCardHeader header="Custom Solutions" />
+          <IndexCardsCardText
             text="Conquer Design transforms your vision into intuitive, scalable, and strategic digital experiences. We prioritize usability, consistency, and innovation to elevate your brand. Our partner are there to create impactful designs"
           />
         </div>
@@ -72,14 +72,3 @@
     </div>
   </div>
 </template>
-<script>
-import CardText from "@/components/index/cards/CardText.vue"
-import CardHeader from "@/components/index/cards/CardHeader.vue"
-
-export default {
-  components: {
-    CardHeader,
-    CardText,
-  },
-};
-</script>

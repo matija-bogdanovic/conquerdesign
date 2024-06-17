@@ -1,9 +1,7 @@
 <template>
   <div class="z-[10] container bg-white-primary relative">
-    <div class="parallax-item">
-      <center>
-        <img src="~/assets/img/work.png" alt="Work" />
-      </center>
+    <div class="flex flex-row items-center justify-center h-[100vh] sticky top-0">
+      <img src="~/assets/img/work.png" alt="Work" />
     </div>
     <div>
       <div
@@ -13,14 +11,14 @@
           <div class="bg-[#CACACF] h-[530px]"></div>
           <div class="flex flex-col gap-[8px]">
             <div class="flex justify-between flex-row">
-              <CardHeader header="PROJECT NAME X" />
+              <IndexCardsCardHeader header="PROJECT NAME X" />
               <div class="flex flex-row w-auto gap-[20px]">
-                <CardProfession text="ui" />
-                <CardProfession text="ux" />
-                <CardProfession text="strategy" />
+                <IndexCardsCardProfession text="ui" />
+                <IndexCardsCardProfession text="ux" />
+                <IndexCardsCardProfession text="strategy" />
               </div>
             </div>
-            <CardText
+            <IndexCardsCardText
               class="opacity-60 font-light"
               text="Conquer Design transforms your vision into intuitive, scalable, and strategic digital experiences. We prioritize usability."
             />
@@ -32,14 +30,14 @@
           <div class="bg-[#CACACF] h-[530px]"></div>
           <div class="flex flex-col gap-[8px]">
             <div class="flex justify-between flex-row">
-              <CardHeader header="PROJECT NAME X" />
+              <IndexCardsCardHeader header="PROJECT NAME X" />
               <div class="flex flex-row w-auto gap-[20px]">
-                <CardProfession text="ui" />
-                <CardProfession text="ux" />
-                <CardProfession text="strategy" />
+                <IndexCardsCardProfession text="ui" />
+                <IndexCardsCardProfession text="ux" />
+                <IndexCardsCardProfession text="strategy" />
               </div>
             </div>
-            <CardText
+            <IndexCardsCardText
               class="opacity-60 font-light"
               text="Conquer Design transforms your vision into intuitive, scalable, and strategic digital experiences. We prioritize usability."
             />
@@ -49,14 +47,14 @@
           <div class="bg-[#CACACF] h-[530px]"></div>
           <div class="flex flex-col gap-[8px]">
             <div class="flex justify-between flex-row">
-              <CardHeader header="PROJECT NAME X" />
+              <IndexCardsCardHeader header="PROJECT NAME X" />
               <div class="flex flex-row w-auto gap-[20px]">
-                <CardProfession text="ui" />
-                <CardProfession text="ux" />
-                <CardProfession text="strategy" />
+                <IndexCardsCardProfession text="ui" />
+                <IndexCardsCardProfession text="ux" />
+                <IndexCardsCardProfession text="strategy" />
               </div>
             </div>
-            <CardText
+            <IndexCardsCardText
               class="opacity-60 font-light"
               text="Conquer Design transforms your vision into intuitive, scalable, and strategic digital experiences. We prioritize usability."
             />
@@ -76,7 +74,7 @@
   align-items: center;
   justify-content: center;
   position: sticky;
-  height: 100vh; /* Fixed typo: '100lvh' to '100vh' */
+  height: 100vh;
   background-size: cover;
   background-position: center;
   animation: parallaxAnimation 0.5s ease-out forwards;

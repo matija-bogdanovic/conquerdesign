@@ -1,12 +1,11 @@
 <template>
   <div class="container sticky top-0">
-    <div class="py-[170px] flex flex-col gap-40">
+    <div class="py-[210px] flex flex-col gap-40">
       <div class="flex flex-row items-end">
         <h1 class="font-light uppercase lg:text-[112px] testanimation md:text-[80px] xsm:text-[50px]">
           we <strong class="font-bold">design</strong><br />
           tomorrow
         </h1>
-        <Logo/>
         <div class="border-2 w-auto relative border-[#3E3AF2] p-[20px]">
           <div class="absolute top-[-5px] left-[-5px] bg-[#fff] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"></div>
           <div class="bg-[#fff] absolute top-[-5px] right-[-5px] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"></div>

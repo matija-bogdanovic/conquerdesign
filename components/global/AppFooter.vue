@@ -5,14 +5,14 @@
         class="border-y border-y-[rgba(0,2,18,0.2)] xsm:py-[16px] lg:py-[32px] grid lg:grid-cols-[1fr_0.5fr_0.5fr] xsm:grid-cols-1 xsm:grid-rows-3 lg:grid-rows-1 gap-[40px]"
       >
         <div class="flex items-start flex-col gap-[74px] lg:pb-[114px]">
-          <CardText
+          <IndexCardsCardText
             class="max-w-[26ch]"
             text="Transforming ideas into impactful products. Let’s collaborate on your next innovation!"
           />
           <Button buttonText="contact us" />
         </div>
         <div class="lg:pl-[56px] lg:border-l border-l-[rgba(0,2,18,0.2)] flex flex-col gap-[8px]">
-          <CardHeader header="menu" class="uppercase text-[16px] font-bold" />
+          <IndexCardsCardHeader header="menu" class="uppercase text-[16px] font-bold" />
           <a href="/"> Home </a>
           <a href="/"> About Us </a>
           <a href="/"> Work </a>
@@ -20,7 +20,7 @@
           <a href="/"> Join us </a>
         </div>
         <div class="lg:pl-[56px] lg:border-l border-l-[rgba(0,2,18,0.2)] flex flex-col gap-[8px]">
-          <CardHeader
+          <IndexCardsCardHeader
             header="check us out"
             class="uppercase text-[16px] font-bold"
           />
@@ -45,13 +45,3 @@
     </div>
   </footer>
 </template>
-
-<script>
-import CardText from "@/components/index/cards/CardText.vue"
-import CardHeader from "@/components/index/cards/CardHeader.vue"
-
-export default {
-  name: "AppFooter",
-  components: { CardText, CardHeader },
-};
-</script>

@@ -3,47 +3,37 @@
     <div
       class="items-center justify-center flex animate-loop-scroll2 gap-[36px]"
     >
-      <CardText text="Strategy" /> <span class="opacity-60">+</span>
-      <CardText text="Design" /> <span class="opacity-60">+</span>
-      <CardText text="Innovation" /> <span class="opacity-60">+</span>
-      <CardText text="Intuitive" /> <span class="opacity-60">+</span>
+      <IndexCardsCardText text="Strategy" /> <span class="opacity-60">+</span>
+      <IndexCardsCardText text="Design" /> <span class="opacity-60">+</span>
+      <IndexCardsCardText text="Innovation" /> <span class="opacity-60">+</span>
+      <IndexCardsCardText text="Intuitive" /> <span class="opacity-60">+</span>
     </div>
     <div
       class="flex items-center justify-center animate-loop-scroll2 gap-[36px]"
       aria-hidden="true"
     >
-      <CardText text="Strategy" /> <span class="opacity-60">+</span>
-      <CardText text="Design" /> <span class="opacity-60">+</span>
-      <CardText text="Innovation" /> <span class="opacity-60">+</span>
-      <CardText text="Intuitive" /> <span class="opacity-60">+</span>
+      <IndexCardsCardText text="Strategy" /> <span class="opacity-60">+</span>
+      <IndexCardsCardText text="Design" /> <span class="opacity-60">+</span>
+      <IndexCardsCardText text="Innovation" /> <span class="opacity-60">+</span>
+      <IndexCardsCardText text="Intuitive" /> <span class="opacity-60">+</span>
     </div>
     <div
       class="flex items-center justify-center animate-loop-scroll2 gap-[36px]"
       aria-hidden="true"
     >
-      <CardText text="Strategy" /> <span class="opacity-60">+</span>
-      <CardText text="Design" /> <span class="opacity-60">+</span>
-      <CardText text="Innovation" /> <span class="opacity-60">+</span>
-      <CardText text="Intuitive" /> <span class="opacity-60">+</span>
+      <IndexCardsCardText text="Strategy" /> <span class="opacity-60">+</span>
+      <IndexCardsCardText text="Design" /> <span class="opacity-60">+</span>
+      <IndexCardsCardText text="Innovation" /> <span class="opacity-60">+</span>
+      <IndexCardsCardText text="Intuitive" /> <span class="opacity-60">+</span>
     </div>
     <div
       class="flex items-center justify-center animate-loop-scroll2 gap-[36px]"
       aria-hidden="true"
     >
-      <CardText text="Strategy" /> <span class="opacity-60">+</span>
-      <CardText text="Design" /> <span class="opacity-60">+</span>
-      <CardText text="Innovation" /> <span class="opacity-60">+</span>
-      <CardText text="Intuitive" /> <span class="opacity-60">+</span>
+      <IndexCardsCardText text="Strategy" /> <span class="opacity-60">+</span>
+      <IndexCardsCardText text="Design" /> <span class="opacity-60">+</span>
+      <IndexCardsCardText text="Innovation" /> <span class="opacity-60">+</span>
+      <IndexCardsCardText text="Intuitive" /> <span class="opacity-60">+</span>
     </div>
   </div>
 </template>
-
-<script>
-import CardText from "@/components/index/cards/CardText.vue"
-
-export default {
-  components: {
-    CardText,
-  },
-};
-</script>

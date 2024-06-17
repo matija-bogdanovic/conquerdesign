@@ -1,7 +1,35 @@
+<style scoped>
+.videocontainer {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  overflow: hidden;
+  height: 100%;
+}
+
+video {
+  z-index: 100;
+  width: 40%; /* Initial width scale */
+  height: auto;
+  pointer-events: none; /* Make video non-hoverable */
+  outline: none; /* Remove focus outline */
+  transition: width 0.3s ease-in-out; /* Smooth transition for width */
+}
+
+.scale-100 {
+  width: 100%; /* Scale to full width */
+}
+
+.scale-30 {
+  width: 40%; /* Scale to 30% width */
+}
+</style>
+
 <template>
-  <div class="container videocontainer">
+  <div class="container flex flex-col items-center w-[40%] h-auto videocontainer">
     <video
       ref="videoPlayer"
+      class="z-[10]"
       autoplay
       muted
       playsinline
@@ -57,30 +85,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.videocontainer {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  overflow: hidden;
-  height: 100%;
-}
-
-video {
-  z-index: 100;
-  width: 40%; /* Initial width scale */
-  height: auto;
-  pointer-events: none; /* Make video non-hoverable */
-  outline: none; /* Remove focus outline */
-  transition: width 0.3s ease-in-out; /* Smooth transition for width */
-}
-
-.scale-100 {
-  width: 100%; /* Scale to full width */
-}
-
-.scale-30 {
-  width: 40%; /* Scale to 30% width */
-}
-</style>
