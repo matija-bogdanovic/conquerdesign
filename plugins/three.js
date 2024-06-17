@@ -1,8 +1,6 @@
-// plugins/three.js
-
 import * as THREE from "three";
+import { defineNuxtPlugin } from "#app";
 
-export default ({ app }, inject) => {
-  // Inject `THREE` to the context as $three
-  inject("three", THREE);
-};
+export default defineNuxtPlugin((nuxtApp) => {
+  nuxtApp.provide("three", THREE);
+});

@@ -13,6 +13,7 @@ html {
 }
 body {
   background-color: #FAF8FF;
+  will-change: scroll-position;
 }
 h1 {
   line-height: 120%;

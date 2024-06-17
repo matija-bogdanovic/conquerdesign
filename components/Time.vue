@@ -5,6 +5,7 @@
 </template>
 <script>
 export default {
+  name: "Time",
   data() {
     return {
       time: ""

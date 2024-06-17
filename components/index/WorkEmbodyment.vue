@@ -14,10 +14,9 @@
   </div>
 </template>
 <script>
-import Button from "../Button.vue";
-import CardText from "./cards/CardText.vue";
+import CardText from "@/components/index/cards/CardText.vue"
 
 export default {
-  components: { CardText, Button },
+  components: { CardText },
 };
 </script>

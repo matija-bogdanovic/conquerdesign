@@ -47,10 +47,11 @@
 </template>
 
 <script>
-import CardHeader from "../index/cards/CardHeader.vue";
-import CardText from "../index/cards/CardText.vue";
+import CardText from "@/components/index/cards/CardText.vue"
+import CardHeader from "@/components/index/cards/CardHeader.vue"
 
 export default {
+  name: "AppFooter",
   components: { CardText, CardHeader },
 };
 </script>

@@ -5,7 +5,11 @@ export default defineNuxtConfig({
   plugins: ["~/plugins/three.js"],
 
   css: ["~/assets/css/main.css"],
-
+  vite: {
+    vue: {
+      customElement: true
+    },
+  },
   app: {
     head: {
       link: [

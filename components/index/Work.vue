@@ -1,6 +1,6 @@
 <template>
   <div class="z-[10] container bg-white-primary relative">
-    <div class="py-[200px] sticky top-0">
+    <div class="parallax-item">
       <center>
         <img src="~/assets/img/work.png" alt="Work" />
       </center>
@@ -15,15 +15,15 @@
             <div class="flex justify-between flex-row">
               <CardHeader header="PROJECT NAME X" />
               <div class="flex flex-row w-auto gap-[20px]">
-               <Profession text='ui'/>
-               <Profession text='ux'/>
-               <Profession text='strategy'/>
+                <CardProfession text="ui" />
+                <CardProfession text="ux" />
+                <CardProfession text="strategy" />
               </div>
             </div>
-              <CardText
+            <CardText
               class="opacity-60 font-light"
-                text="Conquer Design transforms your vision into intuitive, scalable, and strategic digital experiences. We prioritize usability."
-              />
+              text="Conquer Design transforms your vision into intuitive, scalable, and strategic digital experiences. We prioritize usability."
+            />
           </div>
         </div>
         <div class="w-[1fr] lg:block xsm:hidden"></div>
@@ -34,15 +34,15 @@
             <div class="flex justify-between flex-row">
               <CardHeader header="PROJECT NAME X" />
               <div class="flex flex-row w-auto gap-[20px]">
-               <Profession text='ui'/>
-               <Profession text='ux'/>
-               <Profession text='strategy'/>
+                <CardProfession text="ui" />
+                <CardProfession text="ux" />
+                <CardProfession text="strategy" />
               </div>
             </div>
-              <CardText
+            <CardText
               class="opacity-60 font-light"
-                text="Conquer Design transforms your vision into intuitive, scalable, and strategic digital experiences. We prioritize usability."
-              />
+              text="Conquer Design transforms your vision into intuitive, scalable, and strategic digital experiences. We prioritize usability."
+            />
           </div>
         </div>
         <div class="w-[1fr] h-auto flex flex-col gap-[20px]">
@@ -51,15 +51,15 @@
             <div class="flex justify-between flex-row">
               <CardHeader header="PROJECT NAME X" />
               <div class="flex flex-row w-auto gap-[20px]">
-               <Profession text='ui'/>
-               <Profession text='ux'/>
-               <Profession text='strategy'/>
+                <CardProfession text="ui" />
+                <CardProfession text="ux" />
+                <CardProfession text="strategy" />
               </div>
             </div>
-              <CardText
+            <CardText
               class="opacity-60 font-light"
-                text="Conquer Design transforms your vision into intuitive, scalable, and strategic digital experiences. We prioritize usability."
-              />
+              text="Conquer Design transforms your vision into intuitive, scalable, and strategic digital experiences. We prioritize usability."
+            />
           </div>
         </div>
         <div class="w-[1fr]"></div>
@@ -68,12 +68,26 @@
   </div>
 </template>
 
-<script>
-import CardText from "./cards/CardText.vue";
-import CardHeader from "./cards/CardHeader.vue";
-import Profession from './cards/CardProfession.vue';
+<style>
+.parallax-item {
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  height: 100vh; /* Fixed typo: '100lvh' to '100vh' */
+  background-size: cover;
+  background-position: center;
+  animation: parallaxAnimation 0.5s ease-out forwards;
+}
 
-export default {
-  components: { CardText, CardHeader, Profession },
-};
-</script>
+@keyframes parallaxAnimation {
+  0% {
+    transform: translateY(-300px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+</style>

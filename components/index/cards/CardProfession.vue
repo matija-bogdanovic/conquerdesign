@@ -8,7 +8,7 @@
 
 <script>
 export default {
-   name: "Profession",
+   name: "CardProfession",
    props: {
       text: {
          type: String,

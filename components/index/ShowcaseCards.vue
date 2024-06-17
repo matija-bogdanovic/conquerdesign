@@ -73,8 +73,8 @@
   </div>
 </template>
 <script>
-import CardHeader from "./cards/CardHeader.vue";
-import CardText from "./cards/CardText.vue";
+import CardText from "@/components/index/cards/CardText.vue"
+import CardHeader from "@/components/index/cards/CardHeader.vue"
 
 export default {
   components: {

@@ -19,7 +19,7 @@ export default {
   name: "VideoComponent",
   data() {
     return {
-      scrollFactor: 1.5, // Adjust this value for faster growth (higher values mean quicker growth)
+      scrollFactor: 3, // Adjust this value for faster growth (higher values mean quicker growth)
     };
   },
   methods: {
@@ -33,26 +33,24 @@ export default {
     handleVideoEnd() {
       const video = this.$refs.videoPlayer;
       video.pause();
-      video.currentTime = 0; // Reset the video to the beginning
+      video.currentTime = 0;
     },
     handleScroll() {
       const video = this.$refs.videoPlayer;
       const videoRect = video.getBoundingClientRect();
       const windowHeight = window.innerHeight;
       
-      // Calculate the percentage of the video in view
       const start = windowHeight - videoRect.top;
       const end = windowHeight + videoRect.height;
       const percentageInView = Math.min(Math.max(start / end, 0), 1);
 
-      // Scale from 0.3 to 1 based on the percentage
       const scale = 0.3 + this.scrollFactor * percentageInView;
       video.style.width = `${scale * 100}%`;
     },
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
-    this.handleScroll(); // Initial call to set the correct width on load
+    this.handleScroll();
   },
   beforeDestroy() {
     window.removeEventListener("scroll", this.handleScroll);
@@ -66,11 +64,12 @@ export default {
   justify-content: center;
   align-items: start;
   overflow: hidden;
+  height: 100%;
 }
 
 video {
   z-index: 100;
-  width: 30%; /* Initial width scale */
+  width: 40%; /* Initial width scale */
   height: auto;
   pointer-events: none; /* Make video non-hoverable */
   outline: none; /* Remove focus outline */
@@ -82,6 +81,6 @@ video {
 }
 
 .scale-30 {
-  width: 30%; /* Scale to 30% width */
+  width: 40%; /* Scale to 30% width */
 }
 </style>
