@@ -1,0 +1,60 @@
+/* Hero animations */
+.box {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: 1s ease-in-out;
+}
+.visible {
+  transform: translateX(0px);
+  opacity: 1;
+}
+/* Text today in hero animations */
+.today{
+  transform: translateY(40px);
+  opacity: 1;
+}
+.todaybox {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+/* Text animations */
+.text-container {
+  overflow: hidden; /* Ensures the text that moves out of bounds is hidden */
+}
+
+.reveal-text .line {
+  display: block;
+  opacity: 0; /* Initially hide each line */
+}
+
+.reveal-text[data-direction="bottom-up"] .line {
+  transform: translateY(100%); /* Start position below its normal position */
+  transition: transform 1s, opacity 1s; /* Smooth transition */
+  transition-delay: 0.6s;
+}
+.reveal-text[data-direction="bottom-up2"] .line {
+  transform: translateY(100%); /* Start position below its normal position */
+  transition: transform 1s, opacity 1s; /* Smooth transition */
+  transition-delay: 0.8s;
+}
+
+.reveal-text[data-direction="top-down"] .line {
+  transform: translateY(-100%); /* Start position above its normal position */
+  transition: transform 1s, opacity 1s; /* Smooth transition */
+}
+
+.reveal-text[data-direction="left-right"] .line {
+  transform: translateX(-100%); /* Start position to the left */
+  transition: transform 1s, opacity 1s; /* Smooth transition */
+}
+
+.reveal-text[data-direction="right-left"] .line {
+  transform: translateX(100%); /* Start position to the right */
+  transition: transform 1s, opacity 1s; /* Smooth transition */
+}
+
+.reveal-text .line.visible {
+  transform: translate(0, 0); /* End position, back to normal */
+  opacity: 1; /* Make the line visible */
+}

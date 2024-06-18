@@ -8,7 +8,7 @@
         />
       </div>
       <div>
-        <Button buttonText="see more of our work" />
+        <Button button-text="see more of our work" />
       </div>
     </div>
   </div>

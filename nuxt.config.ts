@@ -4,7 +4,8 @@ export default defineNuxtConfig({
 
   plugins: ["~/plugins/three.js"],
 
-  css: ["~/assets/css/main.css"],
+  css: ["~/assets/css/main.css", "~/assets/css/animations.css"],
+  
   vite: {
     vue: {
       customElement: true
@@ -31,5 +32,5 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/image"],
+  modules: ["@nuxt/image", "@nuxt/eslint"],
 });
