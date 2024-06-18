@@ -21,6 +21,14 @@ h1 {
 section {
   background-color: #FAF8FF;
 }
+.button {
+  border: 1px solid;
+  border-color: #000212;
+  background-color: transparent;
+  color: #000212;
+  padding: 10px 20px;
+  cursor: pointer;
+}
 @media screen and (min-width: 1024px) {
   section {
     padding-left: 80px;

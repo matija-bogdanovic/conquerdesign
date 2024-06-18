@@ -1,6 +1,8 @@
 <!-- components/global/CardText.vue -->
 <template>
-  <p>{{ text }}</p>
+  <div>
+    <p>{{ text }}</p>
+  </div>
 </template>
 
 <script>

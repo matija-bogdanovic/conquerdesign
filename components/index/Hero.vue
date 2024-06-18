@@ -68,27 +68,32 @@ export default {
 <template>
   <div ref="observedElement"  class="container sticky top-0">
     <div class="py-[210px] flex flex-col gap-40">
-      <div class="flex flex-row items-end overflow-hidden">
+      <div class="flex flex-row items-end overflow-hidden pb-[3px]">
         <div :class="elementClasses" class="box">
           <h1 class="visible font-light uppercase lg:text-[112px] md:text-[80px] xsm:text-[50px]">
             we <strong class="font-bold">design</strong><br>
             tomorrow
           </h1>
         </div>
-        <div class="today todaybox border-2 another-class w-auto relative border-[#3E3AF2] p-[20px]">
-          <div class="absolute top-[-5px] left-[-5px] bg-[#fff] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"/>
-          <div class="bg-[#fff] absolute top-[-5px] right-[-5px] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"/>
-          <div class="bg-[#fff] absolute bottom-[-5px] left-[-5px] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"/>
-          <div class="bg-[#fff] absolute bottom-[-5px] right-[-5px] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"/>
-          <p class="w-full font-bold yet-another-class uppercase lg:text-[112px] md:text-[80px] xsm:text-[50px] leading-[100%]">
-            today
-          </p>
-          <div class="mt-[-20px] mb-[8px] border-b-[2px] border-b-[#3E3AF2] w-full"/>
+          <div>
+            <div class="border-2 todayboxdesign w-auto relative border-[#3E3AF2] line p-[20px]">
+              <div class="absolute top-[-5px] left-[-5px] bg-[#fff] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"/>
+              <div class="bg-[#fff] absolute top-[-5px] right-[-5px] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"/>
+              <div class="bg-[#fff] absolute bottom-[-5px] left-[-5px] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"/>
+              <div class="bg-[#fff] absolute bottom-[-5px] right-[-5px] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"/>
+              <div class="text-container">
+              <div class="border-b-[2px] border-b-[#3E3AF2] w-full text-container">
+                <p class="w-full reveal-text font-bold uppercase lg:text-[112px] md:text-[80px] xsm:text-[50px] line" data-direction="bottom-up">
+                  <span class="line leading-[100%] mb-[-19px]">today</span>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="flex xsm:flex-col lg:flex-row justify-between xsm:gap-[40px] lg:gap-0 lg:items-end">
         <div class="text-container">
-          <p class="reveal-text" data-direction="bottom-up">
+          <p class="reveal-text" data-direction="left-right">
             <span class="line">Empowering brands with intuitive,</span>
             <span class="line">scalable, and strategic design solutions</span>
             <span class="line">for impactful experiences.</span>

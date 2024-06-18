@@ -13,7 +13,7 @@
             header="Your Partner in Design Innovation"
           />
         </div>
-        <Button buttonText="our solutions" />
+        <Button button-text="our solutions" />
       </div>
     </div>
     <div class="flex flex-col gap-[40px]">
@@ -21,7 +21,7 @@
         class="xsm:p-[20px] bg-white lg:p-[36px] flex flex-row items-center gap-[62px] shadow-cardShadow"
       >
         <div class="w-full flex flex-col justify-center items-center">
-          <img src="~/assets/img/gem.svg" alt="Gem" />
+          <img src="~/assets/img/gem.svg" alt="Gem" >
         </div>
         <div class="flex flex-col gap-[12px]">
           <IndexCardsCardHeader header="Driven by Purpose" />
@@ -34,7 +34,7 @@
         class="xsm:p-[20px] bg-white lg:p-[36px] flex flex-row items-center gap-[62px] shadow-cardShadow"
       >
         <div class="w-full flex flex-col justify-center items-center">
-          <img src="~/assets/img/partnerships.svg" alt="Partnerships" />
+          <img src="~/assets/img/partnerships.svg" alt="Partnerships" >
         </div>
         <div class="flex flex-col gap-[12px]">
           <IndexCardsCardHeader header="Partnerships" />
@@ -47,7 +47,7 @@
         class="xsm:p-[20px] bg-white lg:p-[36px] flex flex-row items-center gap-[62px] shadow-cardShadow"
       >
         <div class="w-full flex flex-col justify-center items-center">
-          <img src="~/assets/img/security.svg" alt="Security" />
+          <img src="~/assets/img/security.svg" alt="Security" >
         </div>
         <div class="flex flex-col gap-[12px]">
           <IndexCardsCardHeader header="Security &#38; Compliance" />
@@ -60,7 +60,7 @@
         class="xsm:p-[20px] bg-white lg:p-[36px] flex flex-row items-center gap-[62px] shadow-cardShadow"
       >
         <div class="w-full flex flex-col justify-center items-center">
-          <img src="~/assets/img/customsolutions.svg" alt="Custom Solutions" />
+          <img src="~/assets/img/customsolutions.svg" alt="Custom Solutions" >
         </div>
         <div class="flex flex-col gap-[12px]">
           <IndexCardsCardHeader header="Custom Solutions" />

@@ -33,6 +33,7 @@
   transition: transform 1s, opacity 1s; /* Smooth transition */
   transition-delay: 0.6s;
 }
+
 .reveal-text[data-direction="bottom-up2"] .line {
   transform: translateY(100%); /* Start position below its normal position */
   transition: transform 1s, opacity 1s; /* Smooth transition */

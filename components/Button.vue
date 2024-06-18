@@ -17,14 +17,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.button {
-  border: 1px solid;
-  border-color: #000212;
-  background-color: transparent;
-  color: #000212;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-</style>

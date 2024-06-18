@@ -1,8 +1,10 @@
 <template>
   <div
-    class="flex rounded-full h-auto px-[12.5px] justify-center items-center border border-[rgba(0, 2, 18, 0.5)] uppercase"
+    class="text-container flex rounded-full h-auto px-[12.5px] justify-center items-center border border-[rgba(0, 2, 18, 0.5)] uppercase"
   >
-    {{text}}
+  <p class="reveal-text line">
+  {{text}}
+  </p>
   </div>
 </template>
 
