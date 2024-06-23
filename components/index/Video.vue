@@ -1,29 +1,3 @@
-<style scoped>
-.videocontainer {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  overflow: hidden;
-  height: 100%;
-}
-
-video {
-  z-index: 100;
-  width: 40%; /* Initial width scale */
-  height: auto;
-  pointer-events: none; /* Make video non-hoverable */
-  outline: none; /* Remove focus outline */
-  transition: width 0.3s ease-in-out; /* Smooth transition for width */
-}
-
-.scale-100 {
-  width: 100%; /* Scale to full width */
-}
-
-.scale-30 {
-  width: 40%; /* Scale to 30% width */
-}
-</style>
 
 <template>
   <div class="container flex flex-col items-center w-[40%] h-auto videocontainer">
@@ -37,18 +11,24 @@ video {
       @loadedmetadata="handleLoadedMetadata"
       @ended="handleVideoEnd"
     >
-      <source src="/static/videos/conquer-designvideo.webm" type="video/webm" />
+      <source src="/static/videos/conquer-designvideo.webm" type="video/webm">
     </video>
   </div>
 </template>
-
 <script>
 export default {
   name: "VideoComponent",
   data() {
     return {
-      scrollFactor: 3, // Adjust this value for faster growth (higher values mean quicker growth)
+      scrollFactor: 3,
     };
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+    this.handleScroll();
+  },
+  beforeUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
     handleLoadedMetadata() {
@@ -76,12 +56,32 @@ export default {
       video.style.width = `${scale * 100}%`;
     },
   },
-  mounted() {
-    window.addEventListener("scroll", this.handleScroll);
-    this.handleScroll();
-  },
-  beforeDestroy() {
-    window.removeEventListener("scroll", this.handleScroll);
-  },
 };
 </script>
+<style scoped>
+.videocontainer {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  overflow: hidden;
+  height: 100%;
+}
+
+video {
+  z-index: 100;
+  width: 40%; /* Initial width scale */
+  height: auto;
+  pointer-events: none; /* Make video non-hoverable */
+  outline: none; /* Remove focus outline */
+  transition: width 0.3s ease-in-out; /* Smooth transition for width */
+}
+
+.scale-100 {
+  width: 100%; /* Scale to full width */
+}
+
+.scale-30 {
+  width: 40%; /* Scale to 30% width */
+}
+</style>
+

@@ -7,34 +7,34 @@
       class="flex flex-row items-center justify-between lg:w-auto xsm:w-full"
     >
       <a href="/">
-        <img src="~/assets/img/conquerdesign.svg" alt="Conquer Design Logo" />
+        <img src="~/assets/img/conquerdesign.svg" alt="Conquer Design Logo" >
       </a>
-      <div
-        @click="toggleMobileNav"
-        class="flex cursor-pointer flex-col gap-[8px]"
+      <div        
         :class="{
           'lg:hidden xsm:flex': !open,
           'lg:hidden xsm:hidden': open,
         }"
-      >
-        <div class="h-[3px] w-[33px] bg-blue-primary"></div>
-        <div class="h-[3px] w-[33px] bg-blue-primary"></div>
-        <div class="h-[3px] w-[33px] bg-blue-primary"></div>
-      </div>
-      <div
+        class="flex cursor-pointer flex-col gap-[8px]"
         @click="toggleMobileNav"
-        class="cursor-pointer flex flex-col justify-center items-center relative w-[30px] h-[30px]"
+      >
+        <div class="h-[3px] w-[33px] bg-blue-primary"/>
+        <div class="h-[3px] w-[33px] bg-blue-primary"/>
+        <div class="h-[3px] w-[33px] bg-blue-primary"/>
+      </div>
+      <div       
         :class="{
           'xsm:flex lg:hidden': open,
           'lg:hidden xsm:hidden': !open,
         }"
+        class="cursor-pointer flex flex-col justify-center items-center relative w-[30px] h-[30px]"
+        @click="toggleMobileNav"
       >
         <div
           class="h-[3px] w-[33px] bg-blue-primary rotate-[45deg] absolute"
-        ></div>
+        />
         <div
           class="h-[3px] w-[33px] bg-blue-primary rotate-[-45deg] absolute"
-        ></div>
+        />
       </div>
     </div>
     <ul

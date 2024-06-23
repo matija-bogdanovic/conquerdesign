@@ -3,7 +3,7 @@
     <div class="container flex flex-col items-center justify-center xsm:px-[20px] md:px-[40px] lg:px-[0px]">
       <div class="flex flex-col gap-[24px]">
         <IndexCardsCardText
-          class="leading-[120%] max-w-[35ch] font-light xsm:text-[30px] md:text-[36px] lg:text-[48px] text-[#fff]"
+          custom-class="leading-[120%] max-w-[35ch] font-light xsm:text-[30px] md:text-[36px] lg:text-[48px] text-[#fff]"
           text="
           “The team transformed our brand with innovative and user-friendly
           designs. They're professional, creative, and dedicated. Highly

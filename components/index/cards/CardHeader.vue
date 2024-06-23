@@ -1,5 +1,5 @@
 <template>
-  <h2 class="text-[24px]">{{ header }}</h2>
+  <h2 :class="computedClasses">{{ header }}</h2>
 </template>
 
 <script>
@@ -10,9 +10,19 @@ export default {
       type: String,
       required: true,
     },
+    classes: {
+      type: String,
+      default: '', // Default value if not provided
+    },
   },
+  computed: {
+    computedClasses() {
+      return [
+        'lg:max-w-[65ch]',
+        'text-[20px]',
+        this.classes // Include any additional classes passed from props
+      ];
+    }
+  }
 };
 </script>
-
-<style scoped>
-</style>

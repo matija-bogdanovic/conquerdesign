@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: "Time",
+  name: "TimeTell",
   data() {
     return {
       time: ""
@@ -28,7 +28,7 @@ export default {
       const parts = formatter.formatToParts(now);
       
       // Build the time string with the AM/PM part in uppercase
-      let timeString = parts.map(part => {
+      const timeString = parts.map(part => {
         if (part.type === 'dayPeriod') {
           return part.value.toUpperCase();
         }

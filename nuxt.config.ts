@@ -1,11 +1,11 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  plugins: ["~/plugins/three.js"],
-
   css: ["~/assets/css/main.css", "~/assets/css/animations.css"],
   
+  build: {
+    transpile: ['three/examples/jsm/loaders/GLTFLoader', 'three/examples/jsm/controls/OrbitControls']
+  },
   vite: {
     vue: {
       customElement: true
@@ -32,5 +32,5 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/image", "@nuxt/eslint"],
+  modules: ["@nuxt/image", "@nuxt/eslint", '@tresjs/nuxt'],
 });

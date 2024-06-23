@@ -1,14 +1,14 @@
 <template>
   <div class="z-[10] container bg-white-primary relative">
     <div class="flex flex-row items-center justify-center h-[100vh] sticky top-0">
-      <img src="~/assets/img/work.png" alt="Work" />
+      <img src="~/assets/img/work.png" alt="Work">
     </div>
     <div>
       <div
         class="z-[2] relative grid xsm:grid-cols-1 lg:grid-cols-[1fr_1fr] xsm:grid-rows-[] lg:grid-rows-[auto_auto_auto] gap-y-[150px]"
       >
         <div class="w-[1fr] h-auto flex flex-col gap-[20px]">
-          <div class="bg-[#CACACF] h-[530px]"></div>
+          <div class="bg-[#CACACF] h-[530px]"/>
           <div class="flex flex-col gap-[8px]">
             <div class="flex justify-between flex-row">
               <IndexCardsCardHeader header="PROJECT NAME X" />
@@ -24,10 +24,10 @@
             />
           </div>
         </div>
-        <div class="w-[1fr] lg:block xsm:hidden"></div>
-        <div class="w-[1fr] lg:block xsm:hidden"></div>
+        <div class="w-[1fr] lg:block xsm:hidden"/>
+        <div class="w-[1fr] lg:block xsm:hidden"/>
         <div class="w-[1fr] h-auto flex flex-col gap-[20px]">
-          <div class="bg-[#CACACF] h-[530px]"></div>
+          <div class="bg-[#CACACF] h-[530px]"/>
           <div class="flex flex-col gap-[8px]">
             <div class="flex justify-between flex-row">
               <IndexCardsCardHeader header="PROJECT NAME X" />
@@ -44,7 +44,7 @@
           </div>
         </div>
         <div class="w-[1fr] h-auto flex flex-col gap-[20px]">
-          <div class="bg-[#CACACF] h-[530px]"></div>
+          <div class="bg-[#CACACF] h-[530px]"/>
           <div class="flex flex-col gap-[8px]">
             <div class="flex justify-between flex-row">
               <IndexCardsCardHeader header="PROJECT NAME X" />
@@ -60,7 +60,7 @@
             />
           </div>
         </div>
-        <div class="w-[1fr]"></div>
+        <div class="w-[1fr]"/>
       </div>
     </div>
   </div>

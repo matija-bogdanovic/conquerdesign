@@ -9,7 +9,7 @@
             class="max-w-[26ch]"
             text="Transforming ideas into impactful products. Let’s collaborate on your next innovation!"
           />
-          <Button buttonText="contact us" />
+          <Button button-text="contact us" />
         </div>
         <div class="lg:pl-[56px] lg:border-l border-l-[rgba(0,2,18,0.2)] flex flex-col gap-[8px]">
           <IndexCardsCardHeader header="menu" class="uppercase text-[16px] font-bold" />
@@ -38,7 +38,7 @@
         </div>
         <div class="flex flex-row gap-[12px]">
           Based in United Kingdom
-          <div class="border-r border-r-[rgba(0,2,18,0.2)]"></div>
+          <div class="border-r border-r-[rgba(0,2,18,0.2)]"/>
           <Time />
         </div>
       </div>

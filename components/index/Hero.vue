@@ -1,4 +1,5 @@
 <script>
+
 export default {
   name: "Hero",
   data() {
@@ -52,9 +53,9 @@ export default {
             lines.forEach((line, index) => {
               setTimeout(() => {
                 line.classList.add('visible');
-              }, index * 100); // Staggered animation effect
+              }, index * 100);
             });
-            observer.unobserve(entry.target); // Stop observing after animation triggers
+            observer.unobserve(entry.target); 
           }
         });
       }, { threshold: 0.1 });
@@ -64,30 +65,28 @@ export default {
 };
 </script>
 
-
 <template>
+  <WrapperLogo/>
   <div ref="observedElement"  class="container sticky top-0">
     <div class="py-[210px] flex flex-col gap-40">
-      <div class="flex flex-row items-end overflow-hidden pb-[3px]">
-        <div :class="elementClasses" class="box">
+      <div class="flex flex-row items-end pb-[3px]">
+        <div :class="elementClasses" class="box flex flex-row items-end justify-center">
           <h1 class="visible font-light uppercase lg:text-[112px] md:text-[80px] xsm:text-[50px]">
             we <strong class="font-bold">design</strong><br>
             tomorrow
           </h1>
         </div>
-          <div>
-            <div class="border-2 todayboxdesign w-auto relative border-[#3E3AF2] line p-[20px]">
-              <div class="absolute top-[-5px] left-[-5px] bg-[#fff] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"/>
-              <div class="bg-[#fff] absolute top-[-5px] right-[-5px] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"/>
-              <div class="bg-[#fff] absolute bottom-[-5px] left-[-5px] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"/>
-              <div class="bg-[#fff] absolute bottom-[-5px] right-[-5px] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"/>
-              <div class="text-container">
-              <div class="border-b-[2px] border-b-[#3E3AF2] w-full text-container">
-                <p class="w-full reveal-text font-bold uppercase lg:text-[112px] md:text-[80px] xsm:text-[50px] line" data-direction="bottom-up">
-                  <span class="line leading-[100%] mb-[-19px]">today</span>
-                </p>
-              </div>
-            </div>
+        <div class="ml-[50px] border-2 todayboxdesign w-auto relative border-[#3E3AF2] p-[20px] z-[10] absolute">
+          <div class="absolute top-[-5px] left-[-5px] bg-[#fff] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"/>
+          <div class="bg-[#fff] absolute top-[-5px] right-[-5px] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"/>
+          <div class="bg-[#fff] absolute bottom-[-5px] left-[-5px] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"/>
+          <div class="bg-[#fff] absolute bottom-[-5px] right-[-5px] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"/>
+          <div class="text-container">
+          <div class="border-b-[2px] border-b-[#3E3AF2] w-full">
+            <p class="w-full reveal-text font-bold uppercase lg:text-[112px] md:text-[80px] xsm:text-[50px]  line" data-direction="bottom-up">
+              <span class="line leading-[100%] mb-[-19px]">today</span>
+            </p>
+          </div>
           </div>
         </div>
       </div>
