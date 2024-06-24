@@ -66,7 +66,7 @@ export default {
 </script>
 
 <template>
-  <WrapperLogo/>
+  <WrapperLogo />
   <div ref="observedElement"  class="container sticky top-0">
     <div class="py-[210px] flex flex-col gap-40">
       <div class="flex flex-row items-end pb-[3px]">

@@ -26,8 +26,7 @@ export default {
         'font-light',
         'xsm:text-[30px]',
         'md:text-[36px]',
-        'lg:text-[48px]',
-        'text-[#fff]',
+        'lg:text-[16px]',
         this.customClass // Include any additional classes passed from props
       ];
     }
