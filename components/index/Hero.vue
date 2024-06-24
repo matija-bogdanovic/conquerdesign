@@ -76,7 +76,7 @@ export default {
             tomorrow
           </h1>
         </div>
-        <div class="ml-[50px] border-2 todayboxdesign w-auto relative border-[#3E3AF2] p-[20px] z-[10] absolute">
+        <div class="ml-[50px] border-2 todayboxdesign w-auto relative border-[#3E3AF2] p-[20px] z-[1000]">
           <div class="absolute top-[-5px] left-[-5px] bg-[#fff] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"/>
           <div class="bg-[#fff] absolute top-[-5px] right-[-5px] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"/>
           <div class="bg-[#fff] absolute bottom-[-5px] left-[-5px] border-[2px] border-[#3E3AF2] h-[10px] w-[10px]"/>

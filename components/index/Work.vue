@@ -1,11 +1,11 @@
 <template>
-  <div class="z-[10] container bg-white-primary relative">
-    <div class="flex flex-row items-center justify-center h-[100vh] sticky top-0">
+  <div class="container bg-white-primary relative z-[10]">
+    <div class="flex flex-row items-center z-[0] justify-center h-[100vh] sticky top-0">
       <img src="~/assets/img/work.png" alt="Work">
     </div>
-    <div>
+    <div class='relative z-[2]'>
       <div
-        class="z-[2] relative grid xsm:grid-cols-1 lg:grid-cols-[1fr_1fr] xsm:grid-rows-[] lg:grid-rows-[auto_auto_auto] gap-y-[150px]"
+        class="grid xsm:grid-cols-1 lg:grid-cols-[1fr_1fr] z-[2] relative xsm:grid-rows-[] lg:grid-rows-[auto_auto_auto] gap-y-[150px]"
       >
         <div class="w-[1fr] h-auto flex flex-col gap-[20px]">
           <div class="bg-[#CACACF] h-[530px]"/>
