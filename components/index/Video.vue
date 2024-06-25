@@ -1,6 +1,6 @@
+
 <template>
-  <div class="flex flex-col items-center justify-center w-full min-h-screen">
-    <div class="container flex flex-col items-center mx-auto videocontainer">
+    <div class="container flex flex-col items-center ml-auto mr-auto w-[40%] h-auto videocontainer">
       <video
         ref="videoPlayer"
         class="z-[10]"
@@ -14,9 +14,7 @@
         <source src="/static/videos/conquer-designvideo.webm" type="video/webm">
       </video>
     </div>
-  </div>
 </template>
-
 <script>
 export default {
   name: "VideoComponent",
@@ -60,7 +58,6 @@ export default {
   },
 };
 </script>
-
 <style scoped>
 .videocontainer {
   display: flex;
@@ -78,4 +75,13 @@ video {
   outline: none; /* Remove focus outline */
   transition: width 0.3s ease-in-out; /* Smooth transition for width */
 }
+
+.scale-100 {
+  width: 100%; /* Scale to full width */
+}
+
+.scale-30 {
+  width: 40%; /* Scale to 30% width */
+}
 </style>
+
