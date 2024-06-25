@@ -65,7 +65,7 @@ export default {
 .videocontainer {
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   overflow: hidden;
   height: 100%;
 }
