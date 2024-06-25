@@ -1,18 +1,20 @@
 
 <template>
-  <div class="container flex flex-col items-center m-auto w-[40%] h-auto videocontainer">
-    <video
-      ref="videoPlayer"
-      class="z-[10]"
-      autoplay
-      muted
-      playsinline
-      loop
-      @loadedmetadata="handleLoadedMetadata"
-      @ended="handleVideoEnd"
-    >
-      <source src="/static/videos/conquer-designvideo.webm" type="video/webm">
-    </video>
+  <div class="flex flex-col items-center justify-center">
+    <div class="container flex flex-col items-center ml-auto mr-auto w-[40%] h-auto videocontainer">
+      <video
+        ref="videoPlayer"
+        class="z-[10]"
+        autoplay
+        muted
+        playsinline
+        loop
+        @loadedmetadata="handleLoadedMetadata"
+        @ended="handleVideoEnd"
+      >
+        <source src="/static/videos/conquer-designvideo.webm" type="video/webm">
+      </video>
+    </div>
   </div>
 </template>
 <script>

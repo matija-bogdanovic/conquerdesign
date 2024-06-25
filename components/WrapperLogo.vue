@@ -1,15 +1,16 @@
 <script setup lang='ts'>
-import { OrbitControls } from '@tresjs/cientos';
-import { TresCanvas, } from '@tresjs/core';
-import type { Object3D } from 'three';
+import * as THREE from "three"
+import { TresCanvas } from '@tresjs/core';
+import { ref } from 'vue';
 </script>
 
 <template>
-  <TresCanvas window-size class='absolute z-[1]' >
+  <TresCanvas window-size class='absolute z-[1]'>
     <TresPerspectiveCamera :position="[0, 0, 16]"/>
-    <OrbitControls/>
+    <!-- Configure OrbitControls with enableZoom set to false -->
+    <OrbitControls :enableZoom="false" />
     <Suspense>
-      <ConquerDesignLogo ref="logo" :rotation-x='1.5' :position=[0,0,0] />
+      <ConquerDesignLogo ref="logo" :rotation-x='1.5' :position="[0, 0, 0]" />
     </Suspense>
   </TresCanvas>
 </template>
