@@ -1,6 +1,6 @@
 
 <template>
-  <div class="flex flex-col items-center justify-center">
+  <div class="flex flex-col items-center justify-center w-full">
     <div class="container flex flex-col items-center ml-auto mr-auto w-[40%] h-auto videocontainer">
       <video
         ref="videoPlayer"
