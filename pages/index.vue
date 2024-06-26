@@ -8,13 +8,13 @@
       <IndexWorkEmbodyment />
     </section>
     <IndexQuote />
-    <section>
+    <section class="relative">
       <IndexPoweringGrowth />
       <IndexSlider />
     </section>
-    <IndexSliderText class="xsm:mt-[34px] md:mt-[68px] lg:mt-[136px]" />
+    <IndexSliderText class="relative" />
     <section>
-      <IndexEnd />
+      <IndexEnd class="relative" />
     </section>
   </div>
 </template>

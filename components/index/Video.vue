@@ -52,7 +52,7 @@ export default {
       const end = windowHeight + videoRect.height;
       const percentageInView = Math.min(Math.max(start / end, 0), 1);
 
-      const scale = 0.3 + this.scrollFactor * percentageInView;
+      const scale = 0.2 + this.scrollFactor * percentageInView;
       video.style.width = `${scale * 100}%`;
     },
   },
