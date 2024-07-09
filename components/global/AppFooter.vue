@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-white-primary xsm:pb-[20px] md:pb-[35px] lg:pb-[50px]">
+  <footer class="z-[10] relative bg-white-primary xsm:pb-[20px] md:pb-[35px] lg:pb-[50px]">
     <div class="container">
       <div
         class="border-y border-y-[rgba(0,2,18,0.2)] xsm:py-[16px] lg:py-[32px] grid lg:grid-cols-[1fr_0.5fr_0.5fr] xsm:grid-cols-1 xsm:grid-rows-3 lg:grid-rows-1 gap-[40px]"
@@ -7,7 +7,7 @@
         <div class="flex items-start flex-col gap-[74px] lg:pb-[114px]">
           <IndexCardsCardText
             class="max-w-[26ch]"
-            text="Transforming ideas into impactful products. Let’s collaborate on your next innovation!"
+            text="Transforming ideas into impactful products. Let&apos;s collaborate on your next innovation!"
           />
           <Button button-text="contact us" />
         </div>
